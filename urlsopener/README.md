@@ -14,4 +14,4 @@ A simple workflow to save and open the tabs of the current browser window:
 - python3
 
 **Download**
-- [source code](https://github.com/schneibe/Alfred-workflows/archive/refs/tags/v1.0.zip) | [release])https://github.com/schneibe/Alfred-workflows/releases/download/v1.0/urls.opener.alfredworkflow)
+- [source code](https://github.com/schneibe/Alfred-workflows/archive/refs/tags/v1.0.zip) | [release](https://github.com/schneibe/Alfred-workflows/releases/download/v1.0/urls.opener.alfredworkflow)
