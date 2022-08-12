@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>43BD34B8-D178-4A4A-8938-68248A74662A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>637B4024-0563-4481-AACE-627661CBA1DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>450A5D01-B437-4BA2-A600-4FE1DEA217C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E69149D3-C697-4B6C-88A9-970B24D28342</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>637B4024-0563-4481-AACE-627661CBA1DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BBC57F3-0686-4DF6-BF2B-46B8A2BB7D2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>65963049-584B-4E73-A66A-7E41E618F952</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>43BD34B8-D178-4A4A-8938-68248A74662A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4B842082-A92E-49C3-874E-DE9D28CFDD24</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>744F8ED0-4921-4BAB-B7A5-16441355AFED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B4785CA2-2E38-4AC1-A0A8-84B88A7F782D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>745855C0-D54D-4606-A56B-11E7B29FEA84</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>744F8ED0-4921-4BAB-B7A5-16441355AFED</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7BBC57F3-0686-4DF6-BF2B-46B8A2BB7D2C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>58750DA1-47A1-4CDB-A07D-B9B590A987AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B4785CA2-2E38-4AC1-A0A8-84B88A7F782D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>450A5D01-B437-4BA2-A600-4FE1DEA217C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Bertrand Schneider</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>urls opener</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+set text item delimiters to linefeed
+
+tell app "google chrome" to url of tabs of window 1 as text
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>B4785CA2-2E38-4AC1-A0A8-84B88A7F782D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Saving {var:space_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E69149D3-C697-4B6C-88A9-970B24D28342</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>urls_save</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Save tabs to a given workspace</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>745855C0-D54D-4606-A56B-11E7B29FEA84</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<false/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<false/>
+				<key>filename</key>
+				<string>{var:space_name}.txt</string>
+				<key>filetext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>1</integer>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>450A5D01-B437-4BA2-A600-4FE1DEA217C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>space_name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>744F8ED0-4921-4BAB-B7A5-16441355AFED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>58750DA1-47A1-4CDB-A07D-B9B590A987AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>urls</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>python3 open_space.py $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>/Users/schneibe/anaconda3/bin/python</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Open the given work space</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>65963049-584B-4E73-A66A-7E41E618F952</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>file=$1
+
+file+='.txt'
+
+while IFS= read -r line || [ -n "$line" ]; 
+do
+    # display $line or do something with $line
+	open "$line"
+	sleep .25
+
+done &lt;"$file"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7BBC57F3-0686-4DF6-BF2B-46B8A2BB7D2C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>43BD34B8-D178-4A4A-8938-68248A74662A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>space_name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>637B4024-0563-4481-AACE-627661CBA1DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+
+
+set defaultBrowser to do shell script "defaults read \\
+    ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure \\
+    | awk -F'\"' '/http;/{print window[(NR)-1]}{window[NR]=$2}'"if defaultBrowser is "" or defaultBrowser contains "safari" then	--  # The default Browser is Safari.	set defaultBrowser to "Safari"	--  # Your code goes here.		tell application "Safari"		if it is not running then launch		delay 0.1		make new document		delay 0.1		activate			end tell		else if defaultBrowser contains "chrome" then	--  # The default Browser is Google Chrome.	set defaultBrowser to "Google Chrome"	--  # Your code goes here.	tell application "/Applications/Google Chrome.app"		make new window		activate	end tell	else if defaultBrowser contains "firefox" then	--  # The default Browser is Firefox.	set defaultBrowser to "Firefox"	--  # Your code goes here.		tell application "Firefox"		if it is not running then			launch		else			tell application "System Events"				tell process "Firefox"					click menu item "New Window" of menu "File" of menu bar 1				end tell			end tell		end if				delay 0.5		activate			end tell	else	set defaultBrowser to "Other"	--  # Your code goes here.end ifreturn defaultBrowser
+
+
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>4B842082-A92E-49C3-874E-DE9D28CFDD24</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>43BD34B8-D178-4A4A-8938-68248A74662A</key>
+		<dict>
+			<key>xpos</key>
+			<real>270</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>450A5D01-B437-4BA2-A600-4FE1DEA217C8</key>
+		<dict>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
+		<key>4B842082-A92E-49C3-874E-DE9D28CFDD24</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>58750DA1-47A1-4CDB-A07D-B9B590A987AE</key>
+		<dict>
+			<key>xpos</key>
+			<real>655</real>
+			<key>ypos</key>
+			<real>335</real>
+		</dict>
+		<key>637B4024-0563-4481-AACE-627661CBA1DD</key>
+		<dict>
+			<key>xpos</key>
+			<real>380</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>65963049-584B-4E73-A66A-7E41E618F952</key>
+		<dict>
+			<key>xpos</key>
+			<real>75</real>
+			<key>ypos</key>
+			<real>335</real>
+		</dict>
+		<key>744F8ED0-4921-4BAB-B7A5-16441355AFED</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
+		<key>745855C0-D54D-4606-A56B-11E7B29FEA84</key>
+		<dict>
+			<key>xpos</key>
+			<real>75</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
+		<key>7BBC57F3-0686-4DF6-BF2B-46B8A2BB7D2C</key>
+		<dict>
+			<key>note</key>
+			<string>Opens all the URL listed in the text file</string>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>335</real>
+		</dict>
+		<key>B4785CA2-2E38-4AC1-A0A8-84B88A7F782D</key>
+		<dict>
+			<key>note</key>
+			<string>output the urls open in the active chrome window</string>
+			<key>xpos</key>
+			<real>325</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
+		<key>E69149D3-C697-4B6C-88A9-970B24D28342</key>
+		<dict>
+			<key>xpos</key>
+			<real>660</real>
+			<key>ypos</key>
+			<real>165</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
